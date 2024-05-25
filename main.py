@@ -31,7 +31,7 @@ async def fetch_links(session: aiohttp.ClientSession, url: str) -> list[str]:
             else:
                 return []
     except Exception as e:
-        print(f"Error fetching {url}: {e}")
+        print(f"Error {url}")
         return []
 
 
